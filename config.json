@@ -1,0 +1,8 @@
+{
+    "TOKEN": "// Bot Token Here"
+    "PREFIX": "nhen",
+    "COLOR": "#DD474D",
+    "OWNERS": [
+        "// Your User ID"
+    ]
+}
