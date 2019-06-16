@@ -1,0 +1,31 @@
+{
+  "name": "nana",
+  "version": "2.6.5",
+  "description": "nHentai Discord bot.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "sqlite3": "^4.0.8",
+    "discord.js": "^11.5.1",
+    "nhentai-api-js": "^1.1.2",
+    "fs": "^0.0.2",
+    "nhentai-js": "^3.2.0",
+    "child_process": "^1.0.2",
+    "snekfetch": "^4.0.4"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://github.com/lekatompessy/Nana.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "discord-js",
+    "express"
+  ]
+}
