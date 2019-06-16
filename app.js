@@ -1,6 +1,6 @@
 const { Collection } = require("discord.js");
 const { readdirSync } = require("fs");
-
+const { TOKEN } = require("config.json");
 const Nana = require("./lib/NanaClient");
 
 const client = new Nana({
@@ -30,4 +30,4 @@ for (const command of (readdirSync(`./commands`).filter(x => x.endsWith(".js")))
     }
 }
 
-client.login(process.env.TOKEN);
+client.login(TOKEN);
