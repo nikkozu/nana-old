@@ -1,13 +1,20 @@
 const { RichEmbed } = require("discord.js");
-const nHentaiAPI = require('nhentai-api-js');
-let api = new nHentaiAPI();
 
 exports.run = async (client, msg, args, color) => {
-    if (!msg.channel.nsfw) return msg.channel.send(`NSFW channel please.`).then(msg => msg.delete(5000));
-    const res = await api.g(args[0]);
-    let m = await msg.channel.send(client.embeds.getInfoEmbed(res));
+    let nick = msg.member.nickname !== null ? `${msg.member.nickname}` : msg.author.username;
+    let id = args[0];
   
-    client.embeds.getEmoji(res, m, msg);
+    if (!msg.channel.nsfw) return msg.channel.send(`NSFW channel please.`).then(msg => msg.delete(5000));
+    if (!args[0]) return msg.channel.send(`**${nick}**, please give me the doujin ID`).then(msg => msg.delete(5000));
+  
+    try {
+        let m = await client.embeds.getInfoEmbed(id, msg);
+        // client.embeds.getEmoji(id, m, msg);
+    } catch (e) {
+        if (e.message == 'Doujin Not Found') {
+            return msg.channel.send(`**${nick}**, I can't find the doujin that you mean`).then(msg => msg.delete(5000));
+        }
+    }
 }
 
 exports.conf = {
