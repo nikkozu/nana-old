@@ -4,5 +4,10 @@
     "COLOR": "#DD474D",
     "OWNERS": [
         "// Your User ID"
+    ],
+    "LANG": [
+        "english",
+        "chinese",
+        "japanese"
     ]
 }
