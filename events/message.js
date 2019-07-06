@@ -12,7 +12,9 @@ module.exports = async (client, msg) => {
     if (msg.content.toLowerCase() === `<@${client.user.id}>` || msg.content.toLowerCase() === `<@!${client.user.id}>`) {
         msg.channel.send(`Prefix: \`nhen\`\nExample: \`nhen random\``);
     }
+    if ((/^(https:)\/\/(nhentai+)\.(net)\/g\/[0-9]+\/?/).test(msg)) return require('../lib/NanaLink')(client, msg);
     if (!msg.content.startsWith(prefix.toLowerCase())) return undefined;
+    if (!msg.guild.member(client.user).hasPermission("MANAGE_MESSAGES") && msg.guild.id != '110373943822540800') msg.channel.send(`**${nick}**, for ideal bot usage please, ask the admin or owner to give \`MANAGE_MESSAGES\` permission to my role`).then(msg=>msg.delete(10000));
 
     // cooldowns command
     let cmd = client.commands.get(command) || client.commands.get(client.aliases.get(command));
