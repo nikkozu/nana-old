@@ -1,13 +1,7 @@
 {
-    "TOKEN": "// Bot Token Here",
-    "PREFIX": "nhen",
-    "COLOR": "#DD474D",
-    "OWNERS": [
-        "// Your User ID"
-    ],
-    "LANG": [
-        "english",
-        "chinese",
-        "japanese"
-    ]
+  "PREFIX": "nh",
+  "COLOR": "#DD474D",
+  "OWNERS": ["383600553537699840"],
+  "LANG": ["english", "chinese", "japanese"],
+  "BAN_TAGS": ["loli", "lolicon", "shota", "shotacon"]
 }
