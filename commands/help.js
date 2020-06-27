@@ -14,17 +14,20 @@ exports.run = async (client, msg, args, color) => {
 				"Command list",
 				`- nh random -- Get random doujinshi
 - nh read \`<ID>\` -- Read doujinshi by the Id you provided
-- nh lang \`<english/japanese/chinese>\` -- Get random doujinshi by the language you provided. You can use alias language too.\nExample: \`<ch/en/jp>\`.
-- nh download \`<Book ID>\` -- Download doujin in zip file.
-- nh donate -- Help my creator to buy me a VPS
+- nh lang \`<english/japanese/chinese>\` -- Get random doujinshi by the language you provided. You can use alias language too.\nExample: \`<ch/en/jp>\`
+- nh download \`<Book ID>\` -- Download doujin in zip file
 - nh favorite \`[add/delete]\` \`<ID>\` (no args to see the list) -- Save your favorite doujin ID
 - nh tag \`<Tag> [Language]\` -- Get random doujinshi by tag you provided.
-- nh search \`<Query> [Language]\` -- Search nHentai site.`
+- nh search \`<Query> [Language]\` -- Search nHentai site`
 			)
 			.setFooter(`Nana V${client.version} || <> = required, [] = optional`)
 			.addField(
 				"Changelogs",
-				'- Now can search tag that have a space\nExample: `nh tag "Full Color" japanese`'
+				`- Rewrite tag command to search tag only. Max tag is 1 (one)
+Check [nHentai Tags](https://nhentai.net/tags) for tags list
+Example: \`nh tag <Tag> [Language]\`
+- Add new search command. The command same with the old tag command
+Example: \`nh search <Query> [Language]\` or \`nh search "<Query>" [Language]\``
 			)
 			.setTimestamp();
 		msg.channel.send(embed);
