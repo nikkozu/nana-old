@@ -1,8 +1,8 @@
 {
     "name": "nana-bot",
-    "version": "2.8.5",
+    "version": "2.8.6",
     "description": "Search, read, and download doujin book directly from your discord channel",
-    "main": "app.js",
+    "main": "index.js",
     "scripts": {
         "start": "node .",
         "lint": "eslint --ignore-path .gitignore \"**/*.js\"",
