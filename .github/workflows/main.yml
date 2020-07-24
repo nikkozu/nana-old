@@ -29,5 +29,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+      # installing eslint
+    - run: pnpm install -D eslint
+      # install dependencies on package.json
     - run: pnpm install --frozen-lockfile
+      # start the lint
     - run: pnpm run lint
