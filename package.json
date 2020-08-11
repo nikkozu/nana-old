@@ -1,10 +1,12 @@
 {
   "name": "nana-bot",
   "version": "2.10.0",
-  "description": "nHentai Discord bot",
+  "description": "Search, read, and download doujin book directly from your discord channel",
   "main": "app.js",
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "lint": "eslint --ignore-path .gitignore \"**/*.js\"",
+    "lint:fix": "npm run lint -- --fix"
   },
   "dependencies": {
     "sqlite3": "^5.0.0",
@@ -17,6 +19,14 @@
     "node": "12.x"
   },
   "author": "Rin <masami45@tuta.io>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masami45/Nana.git"
+  },
+  "bugs": {
+    "url": "https://github.com/masami45/Nana/issues"
+  },
+  "homepage": "https://github.com/masami45/Nana/#readme",
   "license": "MIT",
   "keywords": [
     "node",
