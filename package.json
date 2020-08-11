@@ -1,39 +1,26 @@
 {
-    "name": "nana-bot",
-    "version": "2.8.6",
-    "description": "Search, read, and download doujin book directly from your discord channel",
-    "main": "index.js",
-    "scripts": {
-        "start": "node .",
-        "lint": "eslint --ignore-path .gitignore \"**/*.js\"",
-        "lint:fix": "npm run lint -- --fix"
-    },
-    "dependencies": {
-        "axios": "^0.19.2",
-        "discord.js": "^12.2.0",
-        "express": "^4.17.1",
-        "fs": "^0.0.2",
-        "make-dir": "^3.1.0",
-        "nana-api": "^1.0.4",
-        "sqlite3": "^4.2.0",
-        "superagent": "^5.2.2"
-    },
-    "engines": {
-        "node": "12.x"
-    },
-    "author": "Masami45",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Masami45/Nana.git"
-    },
-    "bugs": {
-        "url": "https://github.com/Masami45/Nana/issues"
-    },
-    "homepage": "https://github.com/Masami45/Nana/#readme",
-    "license": "MIT",
-    "keywords": [
-        "node",
-        "glitch",
-        "express"
-    ]
+  "name": "nana-bot",
+  "version": "2.10.0",
+  "description": "nHentai Discord bot",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "sqlite3": "^5.0.0",
+    "discord.js": "^12.2.0",
+    "axios": "^0.19.2",
+    "nana-api": "^1.1.2",
+    "discord.js-light": "^3.1.1"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "author": "Rin <masami45@tuta.io>",
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
 }
