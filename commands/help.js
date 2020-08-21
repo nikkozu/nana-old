@@ -25,7 +25,7 @@ exports.run = async (client, msg, args, color) => {
       .setFooter(`Nana V${client.version} || <> = required, [] = optional`)
       .addField(
         "Changelogs",
-        `- **BANNED** some tag, so you can read it again from me again`
+        `- **BANNED** some tag, so you can't read it again from me again`
       )
       .setTimestamp();
     msg.channel.send(embed);
