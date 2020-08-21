@@ -10,10 +10,10 @@
   },
   "dependencies": {
     "sqlite3": "^5.0.0",
-    "discord.js": "^12.2.0",
+    "discord.js": "12.2.0",
     "axios": "^0.19.2",
     "nana-api": "^1.1.2",
-    "discord.js-light": "^3.1.1"
+    "discord.js-light": "3.1.1"
   },
   "engines": {
     "node": "12.x"
