@@ -1,7 +1,7 @@
 {
-  "name": "nana-bot",
-  "version": "2.10.0",
-  "description": "Search, read, and download doujin book directly from your discord channel",
+  "name": "mayoi-ecchi",
+  "version": "1.0",
+  "description": "Xem và tải nhện tái ngay trên đít cọt!",
   "main": "app.js",
   "scripts": {
     "start": "node .",
@@ -18,15 +18,15 @@
   "engines": {
     "node": "12.x"
   },
-  "author": "Rin <masami45@tuta.io>",
+  "author": "Nari",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/masami45/Nana.git"
+    "url": "git+https://github.com/nhatthanhxx/Mayoi-ecchi.git"
   },
   "bugs": {
-    "url": "https://github.com/masami45/Nana/issues"
+    "url": "https://github.com/nhatthanhxx/Mayoi-ecchi/issues"
   },
-  "homepage": "https://github.com/masami45/Nana/#readme",
+  "homepage": "https://github.com/nhatthanhxx/Mayoi-ecchi/#readme",
   "license": "MIT",
   "keywords": [
     "node",
