@@ -4,5 +4,5 @@
   "COLOR": "#DD474D",
   "OWNERS": ["YOUR_USER_ID"],
   "LANG": ["english", "chinese", "japanese"],
-  "BANNED": ["lolicon", "shotacon"]
+  "BANNED": ["lolicon", "shotacon", "low lolicon", "low shotacon", "guro"]
 }
