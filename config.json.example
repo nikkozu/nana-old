@@ -1,8 +1,0 @@
-{
-  "TOKEN": "BOT_TOKEN_HERE",
-  "PREFIX": "nhen",
-  "COLOR": "#DD474D",
-  "OWNERS": ["YOUR_USER_ID"],
-  "LANG": ["english", "chinese", "japanese"],
-  "BANNED": ["lolicon", "shotacon"]
-}
